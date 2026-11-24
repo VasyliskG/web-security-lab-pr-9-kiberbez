@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #172033;
+}
+
+.container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+form,
+.messages li {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #d5d9e2;
+  border-radius: 0.5rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.messages {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.messages p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.error {
+  color: #a01818;
+}
+
+.success {
+  color: #176b2c;
+}

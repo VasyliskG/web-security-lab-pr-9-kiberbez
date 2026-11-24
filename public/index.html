@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Захищена форма відгуків</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Захищена форма відгуків</h1>
+      <form id="feedback-form">
+        <label for="name">Ім’я</label>
+        <input id="name" name="name" type="text" minlength="2" maxlength="40" required>
+
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" minlength="5" maxlength="500" required></textarea>
+
+        <button type="submit">Надіслати</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <h2>Відгуки</h2>
+      <ul id="messages" class="messages"></ul>
+    </main>
+  </body>
+</html>
